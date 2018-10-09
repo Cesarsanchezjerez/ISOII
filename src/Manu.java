@@ -1,5 +1,8 @@
 
 public class Manu {
-System.out.println("HOLA CHAVALES SOY MANU");
-	
+	public static void main(String args[]) {
+	System.out.println("HOLA CHAVALES SOY MANU");
+	System.out.println("HOLA");
+	}
+
 }
