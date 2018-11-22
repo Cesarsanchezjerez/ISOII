@@ -1,11 +1,11 @@
-package Codigo;
+package Codigo1;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 
-import Codigo.Estado;
-import Codigo.Mesa;
-import Codigo.Reserva;
+import Codigo1.Estado;
+import Codigo1.Mesa;
+import Codigo1.Reserva;
 public class GestorMesa {
 
 	private ArrayList<Reserva> reservas = new ArrayList<Reserva>();
@@ -16,15 +16,24 @@ public class GestorMesa {
 			this.listaMesas=listaMesas;
 		}
 	 
-	public void HacerReserva(int ID, String Nombre,String string) {
+	public void HacerReserva() {
 		// TODO - implement GestorMesa.HacerReserva
 		
-				Mesa mesa=elegirMesa(Disponibles(listaMesas));
-				Date fecha= new Date();
-				Reserva Rv=new Reserva(mesa,ID,Nombre,fecha);
+
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Introduce nombre de reserva:");
+		String Nombre =sc.next();
+		int ID=Nreservas();
+		
+		
+		Mesa mesa=elegirMesa(Disponibles(listaMesas));
+		Date fecha= new Date();
+		System.out.println("introduce turno: ");
+		String turno=sc.next();
+		Reserva Rv=new Reserva(mesa,ID,Nombre,fecha,turno);
 				
 				
-				 reservas.add(Rv);
+		reservas.add(Rv);
 		
 	}
 

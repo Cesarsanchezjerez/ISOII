@@ -1,11 +1,11 @@
-package Codigo;
+package Codigo1;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import Codigo.GestorMesa;
-import Codigo.Mesa;
-import Codigo.Reserva;
+import Codigo1.GestorMesa;
+import Codigo1.Mesa;
+import Codigo1.Reserva;
 
 public class Main {
 
@@ -29,16 +29,10 @@ public class Main {
 		
 		
 		GestorMesa GMesa= new GestorMesa(ListaMesas);
-		
-		Scanner sc= new Scanner(System.in);
-		System.out.println("Introduce nombre de reserva:");
-		String Nombre =sc.next();
-		int ID=GMesa.Nreservas();
+		JefeSala jf = new JefeSala();
+		jf.hacerReserva(GMesa);
 		
 		
-		GMesa.HacerReserva( ID, Nombre, "1/1/18");
-		
-		GMesa.mostrarReservas();
 		
 
 	}

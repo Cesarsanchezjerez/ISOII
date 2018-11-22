@@ -1,4 +1,4 @@
-package Codigo;
+package Codigo1;
 public class Usuario {
 
 	private String DNI;
@@ -49,7 +49,7 @@ public class Usuario {
 
 	public Usuario() {
 		// TODO - implement Usuario.Usuario
-		throw new UnsupportedOperationException();
+		
 	}
 
 }

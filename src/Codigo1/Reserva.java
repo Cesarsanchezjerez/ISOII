@@ -1,8 +1,8 @@
-package Codigo;
+package Codigo1;
 
 import java.util.Date;
 
-import Codigo.Mesa;
+import Codigo1.Mesa;
 
 public class Reserva {
 
@@ -10,6 +10,7 @@ public class Reserva {
 	private int ID;
 	private String NombreReserva;
 	private Date fecha;
+	private String Turnos;
 
 	public Mesa getMesa() {
 		// TODO - implement Reserva.getMesa
@@ -67,11 +68,12 @@ public class Reserva {
 		throw new UnsupportedOperationException();
 	}
 
-	public Reserva(Mesa Mesa, int ID,String NombreReserva,Date fecha) {
+	public Reserva(Mesa Mesa, int ID,String NombreReserva,Date fecha,String turno) {
 		this.Mesa=Mesa;
 		this.ID=ID;
 		this.NombreReserva=NombreReserva;
 		this.fecha=fecha;
+		this.Turnos=turno;
 		
 		
 		
@@ -79,7 +81,7 @@ public class Reserva {
 		
 	}
 	public String toString() {
-		return "ID Reserva  "+ID+" Mesa = " + Mesa.getID()  + ", NombreReserva=" + NombreReserva + ", Fecha Reserva =" + fecha;
+		return "ID Reserva  "+ID+" Mesa = " + Mesa.getID()  + ", NombreReserva=" + NombreReserva + ", Fecha Reserva =" + fecha+"	turno: 	 "+Turnos;
 	}
 
 }

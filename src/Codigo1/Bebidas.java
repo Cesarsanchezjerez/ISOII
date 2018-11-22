@@ -1,4 +1,4 @@
-package Codigo;
+package Codigo1;
 public class Bebidas {
 
 	private int ID;
